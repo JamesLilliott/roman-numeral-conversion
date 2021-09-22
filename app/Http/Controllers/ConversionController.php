@@ -17,7 +17,7 @@ class ConversionController
      * @param ConversionFactory $conversionFactory
      * @return \Illuminate\Contracts\View\View
      */
-    public function convert(Request $request, ConversionFactory $conversionFactory): View
+    public function convert(Request $request, ConversionFactory $conversionFactory): \Illuminate\Contracts\View\View
     {
         $request->validate([
             'number-to-convert' => ['required', 'alpha_num'],

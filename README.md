@@ -8,10 +8,12 @@ This web application can convert an integer to a roman numeral and vice versa. T
 git clone https://github.com/JamesLilliott/roman-numeral-conversion.git
 ```
 
-2. Install dependencies
+2. Install dependencies & Post install setup
 ```bash
 cd roman-numeral-conversion # Move into the project directory
 composer install # Install dependencies
+cp .env.example .env
+php artisan key:generate
 ```
 
 3. Run test to verify installation worked
